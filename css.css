@@ -1,0 +1,390 @@
+html, body, main {
+	font-family: Helvetica, sans-serif;
+	color: #2d3c49;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.img_logo {
+	background-image: url(../img/u_logo_100.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+	width: 25%;
+	height: 100px;
+}
+
+.logo_my_name {
+	font-size: 1.2em; 
+	padding-top: .2em;
+	padding-right: 1em;
+	width: 75%;
+	text-align: right;
+	text-transform: uppercase;
+
+}
+
+.logo_titul {
+	font-size: .6em; 
+}
+
+@media screen and (min-width:370px) and (max-width:499px) {
+	.img_logo {
+		background-image: url(../img/u_logo_100.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 25%;
+		float: left;
+		height: 100px;
+	}
+	.logo_my_name {
+		font-size: 1.3em; 
+		width: 75%;
+		text-align: right;  
+	}
+	.logo_titul {
+		font-size: .5em; 
+	}
+}
+
+@media screen and (min-width:500px) and (max-width:679px) {
+	.img_logo {
+		background-image: url(../img/u_logo_100.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 25%;
+		float: left;
+		height: 100px;
+	}
+	.logo_my_name {
+		font-size: 1.6em; 
+		width: 75%;	
+		text-align: right;  
+	}
+	.logo_titul {
+		font-size: .5em; 
+	}
+}
+
+@media screen and (min-width:680px) and (max-width:1023px) {
+	.img_logo {
+		background-image: url(../img/u_logo_200.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 25%;
+		height: 200px;
+		float: left;
+	}
+	.logo_my_name {
+		font-size: 2em;
+		width: 75%; 
+		text-align: right;  
+	}
+	.logo_titul {
+		font-size: .5em; 
+	}
+}
+
+@media screen and (min-width:1024px) {
+	.img_logo {
+		background-image: url(../img/u_logo_200.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 25%;
+		height: 200px;
+		float: left;
+	}
+	.logo_my_name {
+		font-size: 4em; 
+		width: 75%;
+		text-align: right;  
+	}
+	.logo_titul {
+		font-size: .6em; 
+	}
+}
+
+.clear {
+	clear: both;
+} 
+
+a, .phone {
+	color: 	#02b3e4;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+ul {
+	padding: 1em 0 2em 2.5em;
+}
+ul li {
+	line-height: 2em;
+	list-style: square;
+}
+
+.colour1 {
+	border-left: 1.5em solid #02b3e4;
+}
+
+.colour2 {
+	border-left: 1.5em solid #7d94ad;
+}
+
+.colour3 {
+	border-left: 1.5em solid #2d3c49;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	text-transform: lowercase;
+}
+
+nav ul {
+    padding: .5em;
+	list-style: none;
+	line-height: 1.5em;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav li a {
+	text-decoration: none;
+	margin: .3em;
+}
+
+article {
+	float: right;
+	padding: 1em;
+}
+
+@media screen and (min-width:768px) {
+
+	nav ul {
+		padding: 1em .5em;
+	}
+	nav li a {
+		margin: 1em;
+	}
+}
+
+@media screen and (min-width:1024px) {
+	nav {
+		width: 15%;
+		float: left;
+		text-transform: lowercase;
+	}
+	nav ul {
+		display: block;
+		padding: 1em 1em;
+		list-style: none;
+	}
+	nav li a {
+		text-decoration: none;
+		margin: 1em;
+	}
+
+	article {
+		width: 75%;
+		margin-right: 1em;
+	}
+}
+
+.bg_img {
+	width: 100%;
+	position: relative;
+	background-image: url(../img/studio_1200.png);
+	background-size: cover;
+	height: 16em;
+}
+
+.bg_img p {
+box-sizing: border-box;
+background-color: #000;
+background-color: rgba(0, 0, 0, 0.6);
+position: absolute;
+bottom: 0;
+height: 10%;
+width: 100%;
+font-size: .8em;
+font-style: italic; 
+color: #fff;
+text-align: right;
+line-height: 2em;
+padding: 0 1em;
+}
+
+
+h1,
+h2,
+h3 	{
+	text-transform: uppercase;
+	line-height: 1.5em;
+}
+h1 {
+	font-size: 140%;	
+	margin: .3em 0;
+	border-bottom: 1px solid #2d3c49;
+}
+h2 {
+	font-size: 120%;
+	margin: 1em 0 .5em;
+	padding-left: .5em;
+}
+h3 {
+	font-size: 100%;
+	margin: 1em 0 .5em;
+	padding-left: .5em;
+}
+
+#about_me, 
+#my_projects, 
+#my_contacts  {
+	width: 99%;
+	padding: 1em 0;
+}
+
+.actual_projects {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ap_1 {
+	width: 99%;
+	position: relative;
+	background-image: url(../img/melbourneclassicorchestra.jpg);
+	background-size: cover;
+	height: 150px;
+	order: 0;
+}
+
+.ap_1 p {
+	box-sizing: border-box;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	bottom: 0;
+	height: 20%;
+	width: 100%;
+	font-size: 1em;
+	font-style: italic; 
+	color: #fff;
+	text-align: right;
+	line-height: 2em;
+	padding: 0 1em;
+	}
+
+.ap_2 {
+	width: 99%;
+	position: relative;
+	background-image: url(../img/pro-peregorodki.jpg);
+	background-size: cover;
+	height: 150px;
+	order: 1;
+}
+
+.ap_2 p {
+	box-sizing: border-box;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	bottom: 0;
+	height: 20%;
+	width: 100%;
+	font-size: 1em;
+	font-style: italic; 
+	color: #fff;
+	text-align: right;
+	line-height: 2em;
+	padding: 0 1em;
+	}
+
+.ap_3 {
+	width: 99%;
+	position: relative;
+	background-image: url(../img/luckymirror.jpg);
+	background-size: cover;
+	height: 150px;
+	order: 2;
+}
+
+.ap_3 p {
+	box-sizing: border-box;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	bottom: 0;
+	height: 20%;
+	width: 100%;
+	font-size: 1em;
+	font-style: italic; 
+	color: #fff;
+	text-align: right;
+	line-height: 2em;
+	padding: 0 1em;
+	}
+
+
+.ap_1, .ap_2, .ap_3  {
+	width: 99%;
+	text-align: center;
+	margin: 10px 10px 20px 0;
+	font-size: .8em;
+}
+
+@media screen and (min-width:768px) {
+		.actual_projects > .ap_1, .ap_2, .ap_3 {
+			width: 45%;
+			height: 170px;
+		}
+}
+
+@media screen and (min-width:1024px) {
+	.actual_projects > .ap_1, .ap_2, .ap_3 {
+		width: 32%;
+		height: 140px;
+	}
+}
+
+footer {
+	font-size: .8em;
+	text-align: right;
+	width: 100%;
+	margin: .5em 0;
+	line-height: 2em;
+	border-top: 1px solid #2d3c49;
+	align-items: baseline;
+}
+
+footer img {
+	display: inline;
+	vertical-align: bottom;
+}
+
+@media screen and (min-width: 1024px) {
+	header, main, footer {
+			width: 1024px;
+			margin-left: auto;
+			margin-right: auto;
+			}
+	}
+
+
+
+
+
